@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="contact.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+                
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="contact.html">Contact</a>
+                </li></li></ul></nav>
+            </header>
+
+              <script type="text/javascript">
+                $(window).on("scroll",function(){
+                    if($(window).scrollTop()){
+                        $('nav').addClass('black');
+                    }else{
+                        $('nav').removeClass('black');
+                    }
+                })
+
+            </script>
+<div class="contact">
+    <h1></h1>
+    <h2>Pour nous contacter</h2>
+    <h3> Vous pouvez nous suivre sur instagram</br><a href="https://www.instagram.com/lechabotdor/" >Le Chabot d'or </a></h3>
+</div>
+<div class="cont">
+    <form id="cont"method="post" action="">
+    <input name="name" type="text" class="form" placeholder="Votre nom" required>
+</br>
+ <input name="email" type="text" class="form" placeholder="Votre email" required></br>
+ <textarea name="message" class="form" placeholder="Votre message" row="4" required></textarea></br>
+ <input type="submit" class="submit" value="Envoyer">
+</form>
+</div>
